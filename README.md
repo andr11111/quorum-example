@@ -1,5 +1,5 @@
 # quorum-example
-Example application using Quorum blockchain with private smart contracts and transactions. This is a simplistic application demonstrating how Quorum can be used to privately share trades data among Hedge Fund, Custodian and Hedge Fund's clients.
+This is a simplistic React app demonstrating how [Quorum](https://github.com/jpmorganchase/quorum) blockchain can be used to privately share trades data among Hedge Fund, Custodian and Hedge Fund's clients.
 
 # Instructions
 1. Launch [Quorum](https://github.com/jpmorganchase/quorum#quickstart) nodes. Enable RPC access and set `--rpccorsdomain` to either \"\*\" or your domain.
