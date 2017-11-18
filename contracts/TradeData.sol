@@ -24,8 +24,6 @@ contract TradeData is mortal {
 
   event NewTradeEvent(uint tradeID);
 
-  string testVal;
-
   uint public numTrades;
   mapping (uint => Trade) public trades;
 
