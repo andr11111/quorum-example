@@ -54,12 +54,4 @@ contract TradeData is mortal {
   function getLastTradeID() public constant returns (uint retVal) {
     return numTrades - 1;
   }
-
-  function writeTest(string input) public {
-    testVal = input;
-  }
-
-  function readTest() public constant returns (string retVal) {
-    return testVal;
-  }
 }

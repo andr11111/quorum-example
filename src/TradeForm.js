@@ -18,7 +18,7 @@ import { required, number } from './helpers/validators';
 
 let TradeForm = props => {
   const { handleSubmit, handleCancel, open } = props;
-  const fieldStype = {"min-width": "400px"}
+  const fieldStype = {minWidth: "400px"}
 
   return (    
     <form onSubmit={ handleSubmit }>

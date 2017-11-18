@@ -33,7 +33,7 @@ class HedgeFund extends Component {
 
   loadContract = (address) => {
     this.quorumService.loadContract(address);    
-    this.tradeID = this.quorumService.getLastTradeID().toNumber();
+    this.tradeID = this.quorumService.getLastTradeID().toNumber().toFixed(0);
     this.subscribeToNewTrades();
   }
 
