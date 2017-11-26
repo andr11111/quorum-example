@@ -30,9 +30,9 @@ contract TradeData is mortal {
   function addTrade(string internalTradeID, uint utcTimestamp, string traderName, int sizeBig, uint priceBig, string counterparty, string client) public returns(uint) {
     // Only owner
     if (msg.sender != owner) return;
+    numTrades++;
     var trade = trades[numTrades];
     uint tradeID = numTrades;
-    numTrades++;  
     trade.internalTradeID = internalTradeID;
     trade.utcTimestamp = utcTimestamp;
     trade.traderName = traderName;
@@ -50,6 +50,6 @@ contract TradeData is mortal {
   }
 
   function getLastTradeID() public constant returns (uint retVal) {
-    return numTrades - 1;
+    return numTrades;
   }
 }
